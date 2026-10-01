@@ -1,0 +1,15 @@
+<!DOCTYPE html> <html lang="vi"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Bạn đã bị lừa đảo!</title> <style> * { box-sizing: border-box; } body { margin: 0; min-height: 100vh; display: flex; justify-content: center; align-items: center; background: #080808; color: white; font-family: Arial, Helvetica, sans-serif; overflow: hidden; } .screen { text-align: center; padding: 30px; animation: shake 0.15s infinite alternate; } .warning { font-size: clamp(45px, 10vw, 110px); font-weight: 900; color: #ff2222; text-transform: uppercase; text-shadow: 0 0 10px #ff0000, 0 0 30px #ff0000, 0 0 60px #ff0000; margin-bottom: 25px; } .sub { font-size: clamp(20px, 5vw, 40px); color: #fff; } .emoji { font-size: clamp(60px, 12vw, 120px); margin: 20px 0; } .button { display: inline-block; margin-top: 30px; padding: 15px 30px; background: #ff2222; color: white; border-radius: 10px; font-size: 20px; font-weight: bold; cursor: pointer; border: none; box-shadow: 0 0 25px #ff2222; } .button:hover { background: #ff4444; } .joke { display: none; font-size: 28px; margin-top: 25px; color: #00ff88; } @keyframes shake { from { transform: translateX(-3px) rotate(-0.5deg); } to { transform: translateX(3px) rotate(0.5deg); } } @keyframes flash { 0%, 100% { background: #080808; } 50% { background: #300000; } } body { animation: flash 0.7s infinite; } </style> </head> <body> <div class="screen"> <div class="emoji">🚨🚨🚨</div>
+<div class="warning">
+  BẠN ĐÃ BỊ LỪA ĐẢO!
+</div>
+
+<button class="button" onclick="showJoke()">
+  BẤM VÀO ĐÂY
+</button>
+
+<div class="joke" id="joke">
+  🎉 TROLL THÀNH CÔNG! 🎉<br>
+  Không mất tiền đâu yên tâm 😂
+</div>
+
+</div> <script> function showJoke() { document.getElementById("joke").style.display = "block"; } </script> </body> </html>
